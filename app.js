@@ -1,10 +1,11 @@
 // Log to the console
-
 console.log("Hello World");
+
 console.log("I am a string");
 console.log(45);
 let greeting = "Good Morning"
-console.log(greeting);
+
+// console.log(greeting);
 
 
 let val;
@@ -68,8 +69,8 @@ fruits = ["orange", "clementine", "mango", "bananas", "grapes"];
 
 
 
-console.log(numbers);
-console.log(numbers2); 
+// console.log(numbers);
+// console.log(numbers2); 
 
 
 // Get Array lemgth
@@ -106,8 +107,8 @@ val = numbers.sort(function(x,y) {
 })
 
 // 
-console.log(numbers);
-console.log(val);
+// console.log(numbers);
+// console.log(val);
 
 
 const person = {
@@ -118,23 +119,76 @@ let result;
 
 result = person;
 
-console.log(result);
+// console.log(result);
 
 
 const id = 100;
 
 // EQUAL TO 
 
-if(id == 100) {
-  console.log('Correct')
-} else {
-  console.log('Incorrect')
-} 
+// if(id == 100) {
+//   console.log('Correct')
+// } else {
+//   console.log('Incorrect')
+// } 
 
 // NOT EQUAL TO 
 
-if(id != 100) {
-  console.log('Not equal to 100')
+// if(id != 100) {
+//   console.log('Not equal to 100')
+// } else {
+//   console.log('ID is equal 100')
+// } 
+
+// Equal to value & type
+
+// if(id === 100) {
+//   console.log('Correct')
+// } else {
+//   console.log('Incorrect')
+// } 
+
+//  Not Equal to value & type
+
+// if(id !== 100) {
+//   console.log('Correct')
+// } else {
+//   console.log('Incorrect')
+// }
+
+
+// Test if undefined
+
+//  if (typeof id) {
+//    console.log('The ID is' )
+//  } else {
+//    console.log('No ID')
+//  }
+
+
+// Greater than or less than 
+
+if (id<=100){
+  console.log('Correct')
 } else {
-  console.log('ID is equal 100')
-} 
+  console.log('Incorrect')
+}
+
+// IF ELSE 
+
+const colour = "Green";
+ 
+if(colour === "Green"){
+  console.log("Colour is green")
+} else if (colour === "Blue"){
+  console.log("Colour is blue")
+} else {
+  console.log("Colour is neither green or blue");
+}
+
+// LOGICAL OPERATORS
+
+
+const name = 'Steve';
+const age = 20;
+
