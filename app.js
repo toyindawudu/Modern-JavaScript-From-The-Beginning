@@ -189,6 +189,37 @@ if(colour === "Green"){
 // LOGICAL OPERATORS
 
 
-const name = 'Steve';
-const age = 20;
+// const name = 'Steve';
+// const age = 20;
+
+// if (age > 0 && age < 12) {
+//   console.log(`${name} is a child`)
+// } else if (age >=13 && age <= 19) {
+//   console.log(`${name} is a teenager`)
+// } else {
+//   console.log (`${name} is an adult`)
+// }
+
+
+// Functions 
+
+// Function Declarations
+
+function greet(){
+  return ('Hello');
+}
+
+// console.log(greet()); 
+
+// FUNCTIONS EXPRESSIONS
+
+const square = function( x = 3) {
+  return x*x;
+}
+
+console.log(square());
+
+// IIFY 
+
+// Property menthods
 
