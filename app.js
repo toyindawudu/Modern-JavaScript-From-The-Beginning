@@ -213,13 +213,99 @@ function greet(){
 
 // FUNCTIONS EXPRESSIONS
 
-const square = function( x = 3) {
+const square = function(x = 3) {
   return x*x;
 }
 
 console.log(square());
 
-// IIFY 
+// IIFY ( Immediately Invokable Functions Expressions) 
 
-// Property menthods
+(function(){
 
+})
+
+
+// Property methods
+
+
+// General Loops
+
+// There are three times for loop iterations. 
+
+// 1. For loop
+// 2.Do while loop
+// 2. For loop
+// 3. While loop
+
+
+// For loop
+
+// for (let i = 0; i <= 10; i++) {
+//   console.log(i);
+// }
+
+// While loop
+
+let i = 1;
+while( i < 10) {
+  console.log(i)
+  i++;
+}
+
+
+// Do While
+
+// let i = 0;
+
+// do {
+//   console.log(i);
+//   i++
+// }
+
+// while (i<10);
+
+
+// Looping through an Array 
+
+
+const cars = [ 'Ford', 'Chevy', 'Honda', 'Toyata'];
+
+// for(let i = 0; i < cars.length; i++ ){
+//   console.log(cars[i]);
+// }
+
+// Looping using the forEach() method
+
+// cars.forEach(function(car){
+//   console.log(car)
+// });
+
+
+
+//MAP
+
+// const users = [
+//   {id: 1, name: 'John',},
+//   {id: 2, name: 'Sara',},
+//   {id: 3, name: 'Karen',},
+//   {id: 4, name: 'Steve',}
+// ];
+
+// const ids = users.map(function(user){
+//   return user.id;
+// })
+
+// console.log(ids);
+
+// For In Loop 
+
+const user = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 40
+}
+
+for(let x in user){
+  console.log(x)
+}
