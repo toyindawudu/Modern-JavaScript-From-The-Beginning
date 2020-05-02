@@ -27,7 +27,6 @@ function loadEventListeners(){
   // Filter through task list event
 
     filter.addEventListener('keyup', filterTasks);
-
 }
 // Create a li element for the added task
 function addTask(e){
