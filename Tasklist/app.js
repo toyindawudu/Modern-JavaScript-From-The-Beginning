@@ -12,6 +12,9 @@ loadEventListeners();
 // Function for all event listeners
 function loadEventListeners(){
 
+  // DOM Load event
+  document.addEventListener('DOMContentLoaded', getTasks);
+
   // Function for adding tasks
 
     form.addEventListener('submit', addTask);
@@ -28,6 +31,45 @@ function loadEventListeners(){
 
     filter.addEventListener('keyup', filterTasks);
 }
+
+// Get Tasks from the Local Storage
+
+function getTasks() {
+  let tasks;
+  if(localStorage.getItem('tasks') === null) {
+    tasks = [];
+  } else {
+    tasks = JSON.parse(localStorage.getItem('tasks'));
+  }
+
+  tasks.forEach(function(task){
+    // Add a li and an anchor link
+    const li = document.createElement('li');
+    const link = document.createElement('a');
+    
+    // Create text node and append to the li element
+    
+    li.appendChild(document.createTextNode(task));
+
+    // Add a classname to the anchor link 
+
+    link.className = 'delete-item secondary-content';
+
+    // Add icons to the Html to the link 
+
+    link.innerHTML = '<i class="fa fa-remove"></i>';
+
+    // Append the link to the li
+    
+    li.appendChild(link);
+
+    // Append the li to the ul, so that it shows in the UI
+    
+    taskList.appendChild(li);
+  });
+}
+
+
 // Create a li element for the added task
 function addTask(e){
   if(taskInput.value === '') {
@@ -90,7 +132,17 @@ function storeTaskInLocalStorage(task) {
 function removeTask(e) {
   if(e.target.parentElement.classList.contains('delete-item')){
     e.target.parentElement.parentElement.remove();
+
+    // Remove from Local Storage
+
+    removeTaskFromLocalStorage(e.target.parentElement.parentElement);
   }
+}
+
+// Function to remove from Local Storage
+
+function removeTaskFromLocalStorage(){
+  console.log('Remove from LS');
 }
 
 // Clear Task List
