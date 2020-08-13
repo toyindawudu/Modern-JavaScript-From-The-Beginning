@@ -310,4 +310,23 @@ let val;
 //   console.log(x)
 // }
 
+// Person Constructor
+function Person(name, dob){
+  this.name = name;
+  this.birthday = new Date(dob);
+  this.calculateAge = function(){
+    const diff = Date.now() - this.birthDay.getTime();
+    const ageDate = new Date(diff);
+    return Math.abs(ageDate.getUTCFullYear() - 1986);
+  }
+}
+
+const toyin = new Person('Toyin', '11-24-1986');
+const titi = new Person('Titi');
+const josiah = new Person('Josiah');
+
+
+console.log(toyin);
+
+
 
