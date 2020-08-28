@@ -1,1 +1,2 @@
 1. What is hoisting?
+2. Does asynchromous javascript speed up performance? 
