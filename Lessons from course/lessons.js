@@ -23,8 +23,13 @@ const userName = (firstname, lastName) => {
 const users = ['Toyin', 'Titi', 'Josiah'];
 
 const nameLengths = users.map((name) => {
-  
   return name.length;
 });
+
+let fruits = ["Pear", "Apple", "orange"];
+
+fruits.forEach(function(val){
+  console.log(val);
+})
 
 console.log(users);

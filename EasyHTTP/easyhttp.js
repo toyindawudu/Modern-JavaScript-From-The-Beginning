@@ -3,7 +3,13 @@ function easyHTTP() {
 }
 
 // Make an HTTP GET Request
+easyHTTP.prototype.get = function(url) {
+  this.http.open('get', url, true);
 
+  this.http.onload = function(){}
+
+  this.http.send();
+}
 
 // Make an HTTP POST Request
 
