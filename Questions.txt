@@ -1,2 +1,6 @@
 1. What is hoisting?
-2. Does asynchromous javascript speed up performance? 
+2. Does asynchromous javascript speed up performance?
+3. What are the instances and real-life application of Gulp?
+4. The plugin that watches my SASS code in VScode, is that an example of a Gulp task runner?
+5. Why would you need to learn Gulp, if there are plugins which can be installed?
+
